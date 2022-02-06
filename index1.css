@@ -189,7 +189,7 @@ body {
     }
     .carouse .carouse_item img {
       /* max-width: 364px; */
-      height: auto;
+      height: 450px;
     }
     .img-1 {
       display: none;
