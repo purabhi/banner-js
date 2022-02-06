@@ -60,7 +60,7 @@ body {
 .main-nav li {
   text-align: center;
   
-  margin: 60px 57px;
+  margin: 40px 57px;
 }
 
 .logo {
@@ -189,7 +189,7 @@ body {
     } */
     .carouse .carouse_item img {
      
-      height: auto;
+      height: 510px;
     }
     .img-1 {
       display: none;
