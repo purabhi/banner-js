@@ -185,10 +185,10 @@ body {
   
   @media only screen and (max-width: 700px) {
     .carouse {
-      max-width: 392px;
+      max-width: 400px;
     }
     .carouse .carouse_item img {
-      max-width: 392px;
+      max-width: 400px;
       height: 450px;
     }
     .img-1 {
