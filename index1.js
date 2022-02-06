@@ -10,7 +10,7 @@ const myslides=$('.carouse_item')
 const totalslides=myslides.length
 
 function autochange(){
-    setTimeout(() => {
+    setInterval(() => {
         if(position==totalslides-1)
         position=0
         else{
@@ -20,7 +20,7 @@ function autochange(){
         updatePosition()
     }, 4000);
    
-    timer=setTimeout("autochange()", 4000);
+    
 }
 
 function next(){
