@@ -5,12 +5,12 @@ let navBarToggle = document.getElementById('js-navbar');
 navBarToggle.addEventListener('click', function () {
   mainNav.classList.toggle('active');
 });
-let timer;
+
 const myslides=$('.carouse_item')
 const totalslides=myslides.length
-
+let timer;
 function autochange(){
-    setInterval(() => {
+ timer= setInterval(() => {
         if(position==totalslides-1)
         position=0
         else{
@@ -20,7 +20,7 @@ function autochange(){
         updatePosition()
     }, 4000);
    
-    
+   
 }
 
 function next(){
@@ -51,6 +51,7 @@ function NextSlide(){
     position++
     }
     updatePosition()
+    
    
    
 }
@@ -63,15 +64,22 @@ function PrevSlide(){
     }
     updatePosition()
    
- 
+}
+function autochange1(){
+  
+    autochange()
+    console.log('start')
     
 }
-
-
-
-
-
-
+function stopShow1(){
+   
+    stopShow()
+    console.log('end')
+ 
+}
+function stopShow(){
+    clearInterval(timer)
+}
 window.onload=function Show(){
     
     autochange()
